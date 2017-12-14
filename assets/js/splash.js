@@ -26,19 +26,17 @@ window.onclick = function(event) {
     return false;
   });
 
-  function code() {
-  var codigo = "";
-  var str = "123456789";
-  for (var i = 0; i < 3; i++) {
-  code += str.charAt(Math.floor(Math.random() * str.length));
+ $('#phone').keyup(function(){
+  if($(this).val().length===10){
+    var code = '';
+    var num = '123456789';
+    for(var i = 0; i < 3; i++){
+    code+=num.charAt(Math.floor(Math.random()*num.length));
+    }
+    alert('Tu código LAB: '+code);
   }
-  return code;
-};
-
-$('#next').click(function(){
-  $('.modal').hide();
-  alert("Your code is" + code );
-  
 });
+
+
 
 }); 
