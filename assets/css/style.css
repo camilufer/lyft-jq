@@ -1,0 +1,35 @@
+
+.fondo {
+background: -webkit-linear-gradient(left top,  ); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(bottom right, ); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(bottom right, ); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to bottom right, #530060 , #E20A8A); /* Standard syntax */
+height: 800px;
+}
+
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.10);
+		transform: translatey(100px);
+	}
+	50% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.10);
+		transform: translatey(00px);
+	}
+	100% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.10);
+		transform: translatey(100px);
+	}
+}
+
+
+#logotipe {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 7s ease-in-out infinite;
+	img { width: 100%; height: 100%; }
+}

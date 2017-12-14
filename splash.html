@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>inicio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/splash.css">
+  
+  
+  <title>FoodMap</title>
+</head>
+
+<body>
+<div  class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4">
+        <img style="padding-top: 20%" id="logotipe" class="logo img-responsive" src="assets/img/logo-white.png" >
+    </div>
+  </div>
+
+  
+ <div class="marcoboton row">  
+ <div class="col-xs-6 col-xs-offset-3">
+<!-- Button to open the modal -->
+<button class="fontboton" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+  
+    <div class="container">
+      <label><b>Sing Up</b></label>
+      <h4 style="color: #E20A8A"> Join now for free ride credit !</h4>
+      <p>Selecciona tu país</p>
+     <select name="countries" id="countries" style="width:12em;">
+      <option>Argentina</option>
+      <option>Brasil</option>
+      <option>Chile</option>    
+      </select>  
+      <p style="padding-top: 0.5em;">Ingresa tu celular</p>
+      <div class="col-xs-10 col-sm-10">
+
+        <div class="form-group">
+          <input id="celular" name="phone" type="tel" placeholder="Ingresa número móvil" class="form-control" required>
+        </div>
+        <p id="alert"></p>
+      </div>
+      <div class="col-xs-8">
+     
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <button id="next"  type="button" class="btn btn-success btn-lg disabled" data-toggle="modal" data-target="#myModal">Next</button>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Tu código es: <span>LAB-</span><span id="codigo"></span></p>
+          </div>
+            <button id="codeButton"  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</div> <!-- Container-fluid -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="assets/js/splash.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
