@@ -34,38 +34,29 @@
   
   <div class="container">
     <label><b>Sing Up</b></label>
-    <h4 style="color: #E20A8A"> Join now for free ride credit !</h4>
-    <p>Selecciona tu país</p>
+    <p>Select</p>
     <select name="countries" id="countries" style="width:12em;">
       <option>Argentina</option>
       <option>Brasil</option>
       <option>Chile</option>    
     </select>
-    <p style="padding-top: 0.5em;">Ingresa tu celular</p>
+    <p style="padding-top: 0.5em;">Phone Number</p>
 
     <div class="col-xs-10 col-sm-10">
       <div class="form-group">
-          <input id="celular" name="phone" type="tel" placeholder="Ingresa número móvil" class="form-control" required>
+          <input id="phone" name="phone" type="cel" placeholder="Phone Number" class="form-control" required>
       </div>
       <p id="alert"></p>
     </div>
  
     <div class="row">
       <div class="col-xs-12 col-sm-12">
-        <button id="next"  type="button" class="btn btn-success btn-lg disabled" data-toggle="modal" data-target="#myModal">Next</button>
+        <button id="next"  type="button" class="next btn btn-success btn-lg disabled" data-toggle="modal" data-target="#myModal">Next</button>
       </div>
+    </div>
+    
+  
 
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p>Tu código es: <span>LAB-</span><span id="codigo"></span></p>
-          </div>
-            <button id="codeButton"  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-    </div>
 </div> <!-- Container-fluid -->
   <!-- Scripts -->
   <script type="text/javascript" src="assets/js/splash.js"></script>

@@ -9,7 +9,7 @@ window.onclick = function(event) {
 };
 
 
-  $('#celular').keyup(function(){
+  $('#phone').keyup(function(){
     if($(this).val().length ===10){
       $('#next').removeClass('disabled');
     }if($(this).val().length > 10){
@@ -17,26 +17,28 @@ window.onclick = function(event) {
     }if($(this).val().length < 10){
       $('#next').addClass('disabled');
     }if (isNaN($(this).val())){
-      $('#alert').text('Sólo puedes ingresar numeros');
+      $('#alert').text('Ingresa los 10 dígitos de tu celular');
       $('#next').addClass('disabled');
+      $()
     }else{
       $('#alert').text('');
     }
     return false;
   });
-  /*
-  * código aleatoreo
-  */
+
   function code() {
-  var code = "";
+  var codigo = "";
   var str = "123456789";
   for (var i = 0; i < 3; i++) {
-    code += str.charAt(Math.floor(Math.random() * str.length));
+  code += str.charAt(Math.floor(Math.random() * str.length));
   }
   return code;
-  };
-  
- 
+};
 
+$('#next').click(function(){
+  $('.modal').hide();
+  alert("Your code is" + code );
+  
+});
 
 }); 
