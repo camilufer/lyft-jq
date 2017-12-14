@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 var modal = document.getElementById('id01');
-// When the user clicks anywhere outside of the modal, close it
+// si el usuario clickea fuera del modal, éste se cierra.
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -17,7 +17,7 @@ window.onclick = function(event) {
     }if($(this).val().length < 10){
       $('#next').addClass('disabled');
     }if (isNaN($(this).val())){
-      $('#alert').text('Favor ingresar sólo números');
+      $('#alert').text('Sólo puedes ingresar numeros');
       $('#next').addClass('disabled');
     }else{
       $('#alert').text('');
